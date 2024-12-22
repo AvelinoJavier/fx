@@ -1,4 +1,4 @@
-package py.com.softwave.erpfx;
+package py.com.softwave.erpfx.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
