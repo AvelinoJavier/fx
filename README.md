@@ -1,6 +1,6 @@
-# ERPFX
+# FX
 
-ERPFX is a modern ERP solution built with JavaFX and styled using BootstrapFX. Designed to simplify business processes, ERPFX offers a modular architecture that allows easy customization and scalability.
+FX is a base project solution built with JavaFX and styled using BootstrapFX. Designed to simplify business processes, FX offers a modular architecture that allows easy customization and scalability.
 
 ## Technologies
 - **JavaFX** for the user interface.
@@ -8,5 +8,3 @@ ERPFX is a modern ERP solution built with JavaFX and styled using BootstrapFX. D
 - Database-ready to integrate with relational or non-relational databases.
 
 ---
-
-Feel free to contribute to ERPFX or customize it for your business needs!
