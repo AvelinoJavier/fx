@@ -1,12 +1,12 @@
-module py.com.softwave.erpfx {
+module py.com.softwave.fx {
     requires javafx.controls;
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
-    requires java.logging;
+    requires java.sql;
 
-    opens py.com.softwave.erpfx to javafx.fxml;
-    exports py.com.softwave.erpfx;
-    exports py.com.softwave.erpfx.controller;
-    opens py.com.softwave.erpfx.controller to javafx.fxml;
+    opens py.com.softwave.fx to javafx.fxml;
+    exports py.com.softwave.fx;
+    exports py.com.softwave.fx.controller;
+    opens py.com.softwave.fx.controller to javafx.fxml;
 }

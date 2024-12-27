@@ -1,8 +1,7 @@
-package py.com.softwave.erpfx.util;
+package py.com.softwave.fx.util;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.LogRecord;
@@ -12,7 +11,6 @@ public class LoggerUtil {
     private static final String LOGS_FOLDER_NAME = "logs";
     private static final String CLASS_NAME = LoggerUtil.class.getName();
     private static final Logger LOGGER = Logger.getLogger(CLASS_NAME);
-    private static final ResourceBundle MESSAGES = ResourceBundle.getBundle("messages", java.util.Locale.getDefault());
 
     static {
         try {
@@ -27,7 +25,7 @@ public class LoggerUtil {
     }
 
     private LoggerUtil() {
-        throw new UnsupportedOperationException(String.format(MESSAGES.getString("severe.classInstantiation"), CLASS_NAME));
+        throw new UnsupportedOperationException(String.format(DefaultValues.MESSAGES.getString("severe.classInstantiation"), CLASS_NAME));
     }
 
     public static void logInfo(Logger logger, String messageKey, Object... args) {
@@ -44,7 +42,7 @@ public class LoggerUtil {
 
     private static void log(Logger logger, Level level, String messageKey, Object... args) {
         if (logger.isLoggable(level)) {
-            String message = String.format(MESSAGES.getString(messageKey), args);
+            String message = String.format(DefaultValues.MESSAGES.getString(messageKey), args);
 
             LogRecord logRecord = new LogRecord(level, message);
             logRecord.setLoggerName(logger.getName());
